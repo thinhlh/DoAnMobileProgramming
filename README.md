@@ -47,70 +47,97 @@
 ### General
 - ***Sign in***
 - ***Sign out***
+<div>
 
-<img src="/images/login.png" width="200" height="440">
-<img src="/images/signup.png" width="200" height=440>
+<img src="/images/login.png" style="padding: 10px" width="200" height="440">
+<img src="/images/signup.png" style="padding: 10px" width="200" height=440>
+</div>
 
 ### Customer
 #### Home Screen
 - Giao diện chính
 - Thông báo mới
+<div>
 
-<img src="/images/home.png" width="200" height=440>
-<img src="/images/notification.png" width="200" height=440>
+<img src="/images/home.png" style="padding: 10px" width="200" height=440>
+<img src="/images/notification.png"   style="padding: 10px" width="200" height=440>
+</div>
 
 
 #### Order screen
 - Order overview screen
 - Product detail screen
 - Confirmation order screen
+<div>
 
-<img src="/images/order-screen.png" width="160" height=350>
-<img src="/images/product-detail.png" width="160" height=350>
-<img src="/images/order.png" width="160" height=350>
+<img src="/images/order-screen.png" style="padding: 10px" width="220" height=440>
+<img src="/images/product-detail.png" style="padding: 10px" 
+width="220" height=440>
+<img src="/images/order.png" width=220 height=440>
+</div>
 
 #### Stores Screen
 - Stores of brands
 - Store detail
 - Embedded  Google map
 
-<img src="/images/stores.png" width="160" height=360 >
-<img src="/images/store-detail.png" width="160" height=350 >
-<img src="/images/map.png" width="160" height=350 >
+<div>
+
+<img src="/images/stores.png" width="220" style="padding: 10px" height=440 >
+<img src="/images/store-detail.png" width="220" style="padding: 10px" height=440 >
+<img src="/images/map.png" width="220" style="padding: 10px" height=440 >
+</div>
+
 
 #### Reward Screen
 - Thông tin khách hàng
 - Danh sách một số phiếu ưu đãi
 - Danh sách tât cả phiếu ưu đãi
 
-<img src="/images/reward.png" width="160" height=350 >
-<img src="/images/promotion.png" width="160" height=360 >
-<img src="/images/promotion1.png" width="160" height=350 >
+<div>
+
+<img src="/images/reward.png" width="220" style="padding: 10px" height=440 >
+<img src="/images/promotion.png" width="220"  style="padding: 10px" height=440 >
+<img src="/images/promotion1.png" width="220"style="padding: 10px" height=440 >
+</div>
+
 
 ### Others Screen
 - Giao diện trang khác
 - Thông tin liên lạc
 
-<img src="/images/others.png" width="220" height=440 >
-<img src="/images/contact.png" width="220" height=440 >
+<div>
+
+<img src="/images/others.png" width="220" style="padding: 10px" height=440 >
+<img src="/images/contact.png" width="220" style="padding: 10px" height=440 >
+</div>
+
 
 - Giao diện thông tin người dùng
 - Giao diện bottom sheet đổi mật khẩu
 
-<img src="/images/user-info.png" width="220" height=440 >
-<img src="/images/change-password.png" width="220" height=440 >
+<div>
+
+<img src="/images/user-info.png" width=220 style="padding: 10px" height=440 >
+<img src="/images/change-password.png" style="padding: 10px" width=220 height=440 >
+</div>
+
 
 - Giao diện trang thông tin chi tiết hoá đơn
 - Giao diện xem và chỉnh sửa thông tin người dùng
 
-<img src="/images/order-detail.png" width="220" height=440 >
-<img src="/images/order-detail2.png" width="220" height=440 >
+<div>
+<img src="/images/order-detail.png" width="220" style="padding: 10px" height=440 >
+<img src="/images/order-detail2.png" width="220" style="padding: 10px" height=440 >
+</div>
+
+
 
 ### Admin
 Vì các loại danh sách này tương tự như nên chỉ đưa ra một số danh sách tượng trưng  và đặc biệt
 
 #### Danh sách người dùng
-<p align="center"><img src="/images/admin-users.png" width="220" height=440 ></p>
+<p align="center"><img src="/images/admin-users.png"  width="220" height=440 ></p>
 
 #### Danh sách thông báo
 <p align="center"><img src="/images/admin-notifications.png" width="220" height=440 ></p>
@@ -164,7 +191,7 @@ You can check for all dependencies at [pubspec.yaml](/the_coffee_house/pubspec.y
 - Google Chrome crash on Android emulator, result in failed in app Web View
 
 ##### IOS
-- [Image Picker crash on  M1 simulator](https://github.com/flutter/flutter/issues/71943)add
+- [Image Picker crash on  M1 simulator](https://github.com/flutter/flutter/issues/71943)
 - [Making a phone call or mailling is disable on IOS emulator](https://pub.dev/packages/url_launcher)
 ```
 Note: URL schemes are only supported if there are apps installed on the device that can support them. For example, iOS simulators don't have a default email or phone apps installed, so can't open tel: or mailto: links.
