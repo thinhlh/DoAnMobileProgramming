@@ -511,8 +511,11 @@ EXTERNAL SOURCES:
     :path: Flutter
   flutter_facebook_auth:
     :path: ".symlinks/plugins/flutter_facebook_auth/ios"
+<<<<<<< HEAD
   flutter_local_notifications:
     :path: ".symlinks/plugins/flutter_local_notifications/ios"
+=======
+>>>>>>> bdd0efb6144a5901f7519241feca3345b0a8f76f
   google_maps_flutter:
     :path: ".symlinks/plugins/google_maps_flutter/ios"
   google_sign_in:
