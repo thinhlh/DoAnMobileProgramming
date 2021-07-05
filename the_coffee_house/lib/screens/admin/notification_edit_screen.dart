@@ -52,7 +52,6 @@ class _NotificationEditScreenState extends State<NotificationEditScreen> {
 
   void onChangedOrSubmitUrl() {
     setState(() {
-      FocusScope.of(context).unfocus();
       imageUrl = imageController.text;
       isChoosingImageFromLocal = false;
     });

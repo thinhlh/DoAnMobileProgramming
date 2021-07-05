@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:the/models/membership.dart';
 import 'package:http/http.dart' as http;
+import 'package:the/utils/const.dart';
 
 import '../models/notification.dart';
 import '../providers/notifications.dart';
@@ -138,8 +139,7 @@ class NotificationsAPI extends BaseAPI {
   Future<void> _callPushNotification(Notification notification) {
     return http
         .post(
-          Uri.parse(
-              'https://the-coffee-house-server.herokuapp.com/push-notification'),
+          Uri.parse(SERVER_ENDPOINT + '/push-notification'),
           headers: {
             'Content-Type': 'application/json',
             'Authorization': 'the-coffee-house',
