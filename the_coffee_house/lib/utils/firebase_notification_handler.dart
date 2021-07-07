@@ -41,10 +41,7 @@ class FirebaseNotifications {
     //Handle message
     FirebaseMessaging.onMessage.listen((message) {
       print('Receive $message');
-      if (Platform.isAndroid)
-        showNotification(message.data['title'], message.data['body']);
-      else if (Platform.isIOS)
-        showNotification(message.notification.title, message.notification.body);
+      showNotification(message.notification.title, message.notification.body);
     });
 
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
@@ -63,6 +60,8 @@ class FirebaseNotifications {
             ],
           ),
         );
+      else
+        showNotification(message.data['title'], message.data['body']);
     });
   }
 

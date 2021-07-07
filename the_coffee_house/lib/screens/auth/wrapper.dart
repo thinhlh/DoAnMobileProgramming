@@ -38,20 +38,23 @@ class Wrapper extends StatelessWidget {
                 if (snapshot.connectionState == ConnectionState.done &&
                     snapshot.hasData) {
                   return FutureBuilder(
-                      builder: (_, futureSnapshot) =>
-                          futureSnapshot.connectionState == ConnectionState.done
-                              ? context.read<UserProvider>().user.isAdmin
-                                  ? AdminTabScreen()
-                                  : TabScreen(key: tabScreenState)
-                              : waitingScreen,
-                      future: Future.wait([
+                    builder: (_, futureSnapshot) =>
+                        futureSnapshot.connectionState == ConnectionState.done
+                            ? context.read<UserProvider>().user.isAdmin
+                                ? AdminTabScreen()
+                                : TabScreen(key: tabScreenState)
+                            : waitingScreen,
+                    future: Future.wait(
+                      [
                         Provider.of<UserProvider>(context, listen: false)
                             .fetchUser(),
                         FCMService.initializeFCMSubscription(context
                             .watch<UserProvider>()
                             .user
                             .subscribeToNotifications),
-                      ]));
+                      ],
+                    ),
+                  );
                 }
                 return waitingScreen;
               })

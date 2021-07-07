@@ -9,6 +9,8 @@ import 'package:the/services/admin_dashboard_service.dart';
 import 'package:the/services/auth_api.dart';
 import 'package:the/services/user_api.dart';
 import 'package:the/utils/base_date_formatter.dart';
+import 'package:the/widgets/admin/admin_bar_chart.dart';
+import 'package:the/widgets/admin/line_chart.dart';
 import 'package:the/widgets/navigative_action_card.dart';
 import '/utils/const.dart' as Constant;
 
@@ -123,7 +125,7 @@ class AdminDashboard extends StatelessWidget {
                                   maxLines: 1,
                                   style: TextStyle(
                                     color: Colors.black26,
-                                    fontSize: 24,
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     fontStyle: FontStyle.italic,
                                   ),
@@ -320,6 +322,9 @@ class AdminDashboard extends StatelessWidget {
                                         ),
                                       ],
                                     ),
+                                    SizedBox(height: Constant.SIZED_BOX_HEIGHT),
+                                    // AdminLineChart(),
+                                    //AdminPieChart(),
                                   ],
                                 ),
                       SizedBox(

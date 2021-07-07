@@ -237,9 +237,15 @@ class OrderDetailBottomSheet extends StatelessWidget {
                               ),
                               title: Text(
                                 Provider.of<Products>(context, listen: false)
-                                    .getProductById(
-                                        order.cart.cartItems[index].productId)
-                                    .title,
+                                            .getProductById(order.cart
+                                                .cartItems[index].productId) ==
+                                        null
+                                    ? 'Removed'
+                                    : Provider.of<Products>(context,
+                                            listen: false)
+                                        .getProductById(order
+                                            .cart.cartItems[index].productId)
+                                        .title,
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,

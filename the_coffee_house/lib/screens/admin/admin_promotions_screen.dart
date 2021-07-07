@@ -8,6 +8,7 @@ import 'package:the/providers/promotions.dart';
 import 'package:the/screens/admin/product_edit_screen.dart';
 import 'package:the/screens/admin/promotion_edit_screen.dart';
 import 'package:the/services/notifications_api.dart';
+import 'package:the/services/promotions_api.dart';
 import '/utils/const.dart' as Constant;
 
 class AdminPromotionsScreen extends StatelessWidget {
@@ -88,7 +89,7 @@ class AdminPromotionCard extends StatelessWidget {
             CupertinoDialogAction(
               child: Text('Proceed'),
               isDefaultAction: true,
-              onPressed: () => NotificationsAPI()
+              onPressed: () => PromotionsAPI()
                   .delete(promotion.id)
                   .then((value) => Navigator.of(context).pop(true)),
             ),

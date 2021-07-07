@@ -140,6 +140,8 @@ class _PromotionEditScreenState extends State<PromotionEditScreen> {
     if (targettedCustomer[2]) targetCustomer.add(Membership.Gold);
     if (targettedCustomer[3]) targetCustomer.add(Membership.Diamond);
 
+    print(targetCustomer);
+
     if (targetCustomer.isEmpty) {
       showCupertinoDialog(
         context: context,
@@ -164,7 +166,7 @@ class _PromotionEditScreenState extends State<PromotionEditScreen> {
       title: titleController.text,
       description: descriptionController.text,
       imageUrl: isChoosingImageFromLocal ? imageFile.path : imageUrl,
-      code: codeController.text,
+      code: codeController.text.toUpperCase(),
       value: valueController.text,
       targetCustomer: targetCustomer,
       expiryDate: expiryDate,
@@ -277,7 +279,6 @@ class _PromotionEditScreenState extends State<PromotionEditScreen> {
                       ),
                     ),
                     maxLines: 3,
-                    keyboardType: TextInputType.phone,
                     validator: (value) =>
                         value.isEmpty ? 'Decription cannot be empty' : null,
                   ),
@@ -344,6 +345,7 @@ class _PromotionEditScreenState extends State<PromotionEditScreen> {
                     controller: expiryDateController,
                     keyboardType: TextInputType.url,
                     decoration: InputDecoration(
+                      labelText: 'Expiry Date',
                       suffixIcon: IconButton(
                         icon: Icon(Icons.calendar_today),
                         onPressed: () => showDatePicker(

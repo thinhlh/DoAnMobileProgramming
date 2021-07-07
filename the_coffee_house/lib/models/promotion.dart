@@ -40,7 +40,9 @@ class Promotion {
     this.id = json['id'];
     this.code = json['code'];
     this.title = json['title'];
-    this.expiryDate = (json['expiryDate'] as Timestamp).toDate();
+    this.expiryDate = json['expiryDate'] == null
+        ? DateTime.now()
+        : (json['expiryDate'] as Timestamp).toDate();
     this.description = json['description'];
     this.targetCustomer = (json['targetCustomer'] as List<dynamic>)
         .cast<String>()

@@ -90,8 +90,12 @@ class OrdersHistoryScreen extends StatelessWidget {
                                   .toList()
                                   .map((productId) {
                                     return productsProvider
-                                        .getProductById(productId)
-                                        .title;
+                                                .getProductById(productId) ==
+                                            null
+                                        ? 'Removed'
+                                        : productsProvider
+                                            .getProductById(productId)
+                                            .title;
                                   })
                                   .join(', '),
                               style: TextStyle(

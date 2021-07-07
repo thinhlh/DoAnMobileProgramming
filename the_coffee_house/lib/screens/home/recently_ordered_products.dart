@@ -20,7 +20,7 @@ class RecentlyOrderedProduct extends StatelessWidget {
                 child: CircularProgressIndicator(),
               );
             List<String> productsInLastOrder = orderedProductsSnapshot.data;
-            if (productsInLastOrder.isEmpty)
+            if (productsInLastOrder.isEmpty || productsInLastOrder == null)
               return Center(
                 child: Text(
                   'You haven\'t order yet',

@@ -7,7 +7,7 @@
 ## Menu
 1. [Introduction](#introduction)
     1. [Chức năng chung](#general)
-        1. [Đăng nhập/ Đăng ký](#Sign-in)
+        1. Đăng nhập/ Đăng ký
     1. [Chức năng cho người dùng](#user)
         1.  [Giao diện trang home](#home-screen)
         1.  [Giao diện trang order](#order-screen)
