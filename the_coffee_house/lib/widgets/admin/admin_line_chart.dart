@@ -82,31 +82,26 @@ class _AdminLineChartState extends State<AdminLineChart> {
           showTitles: true,
           reservedSize: 22,
           getTextStyles: (value) => const TextStyle(
-              color: Color(0xff68737d),
-              fontWeight: FontWeight.bold,
-              fontSize: 16),
+            color: Color(0xff68737d),
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
           getTitles: (value) {
             switch (value.toInt()) {
               case 0:
                 return 'Mon';
-              case 1:
-                return 'Tue';
               case 2:
-                return 'Wed';
-              case 3:
-                return 'Thu';
+                return 'Tue';
               case 4:
-                return 'Fri';
-              case 5:
-                return 'Sat';
+                return 'Wed';
               case 6:
+                return 'Thu';
+              case 8:
+                return 'Fri';
+              case 10:
+                return 'Sat';
+              case 12:
                 return 'Sun';
-              // case 2:
-              //   return 'MAR';
-              // case 5:
-              //   return 'JUN';
-              // case 8:
-              //   return 'SEP';
             }
             return '';
           },
@@ -117,16 +112,18 @@ class _AdminLineChartState extends State<AdminLineChart> {
           getTextStyles: (value) => const TextStyle(
             color: Color(0xff67727d),
             fontWeight: FontWeight.bold,
-            fontSize: 15,
+            fontSize: 14,
           ),
           getTitles: (value) {
             switch (value.toInt()) {
               case 1:
-                return '10k';
+                return '500';
               case 3:
-                return '30k';
+                return '1000';
               case 5:
-                return '50k';
+                return '1500';
+              case 7:
+                return '2000';
             }
             return '';
           },
@@ -135,22 +132,23 @@ class _AdminLineChartState extends State<AdminLineChart> {
         ),
       ),
       borderData: FlBorderData(
-          show: true,
-          border: Border.all(color: const Color(0xff37434d), width: 1)),
+        show: true,
+        border: Border.all(color: const Color(0xff37434d), width: 1),
+      ),
       minX: 0,
-      maxX: 11,
+      maxX: 12,
       minY: 0,
-      maxY: 6,
+      maxY: 8,
       lineBarsData: [
         LineChartBarData(
           spots: [
             FlSpot(0, 3),
-            FlSpot(2.6, 2),
-            FlSpot(4.9, 5),
-            FlSpot(6.8, 3.1),
+            FlSpot(2, 2),
+            FlSpot(4, 5),
+            FlSpot(6, 3.1),
             FlSpot(8, 4),
-            FlSpot(9.5, 3),
-            FlSpot(11, 4),
+            FlSpot(10, 3),
+            FlSpot(12, 4),
           ],
           isCurved: true,
           colors: gradientColors,

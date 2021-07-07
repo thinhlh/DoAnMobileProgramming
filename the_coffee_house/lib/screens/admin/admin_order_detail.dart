@@ -231,14 +231,17 @@ class AdminOrderDetail extends StatelessWidget {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text(
-                                            product.title,
-                                            maxLines: 1,
-                                            softWrap: true,
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: Constant.SUB_HEADING,
+                                          FittedBox(
+                                            fit: BoxFit.cover,
+                                            child: Text(
+                                              product.title,
+                                              maxLines: 1,
+                                              softWrap: true,
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: Constant.SUB_HEADING,
+                                              ),
                                             ),
                                           ),
                                           SizedBox(
@@ -285,35 +288,45 @@ class AdminOrderDetail extends StatelessWidget {
                       height: Constant.SIZED_BOX_HEIGHT,
                     ),
                     ElevatedButton(
-                      child: Text(
-                        order.isDelivered ? 'Delivered' : 'Delivery',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w700,
+                        child: Text(
+                          order.isDelivered ? 'Delivered' : 'Delivery',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
-                      ),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                          order.isDelivered
-                              ? Colors.grey
-                              : Colors.green.shade300,
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(
+                            order.isDelivered
+                                ? Colors.grey
+                                : Colors.green.shade300,
+                          ),
+                          padding: MaterialStateProperty.all(
+                            EdgeInsets.all(2 * Constant.GENERAL_PADDING),
+                          ),
                         ),
-                        padding: MaterialStateProperty.all(
-                          EdgeInsets.all(2 * Constant.GENERAL_PADDING),
-                        ),
-                      ),
-                      onPressed: order.isDelivered
-                          ? null
-                          : () => AdminOrdersAPI()
-                              .delivery(
-                                orderId: id,
-                                recipientId: order.recipentId,
-                                expectedPoint:
-                                    order.orderValue ~/ 1000 + user.point,
-                              )
-                              .then((value) => Navigator.of(context).pop()),
-                    ),
+                        onPressed: order.isDelivered
+                            ? null
+                            : () {
+                                if (user == null) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text('User is removed'),
+                                    ),
+                                  );
+                                }
+                                AdminOrdersAPI()
+                                    .delivery(
+                                      orderId: id,
+                                      recipientId: order.recipentId,
+                                      expectedPoint: order.orderValue ~/ 1000 +
+                                              user.point ??
+                                          0,
+                                    )
+                                    .then(
+                                        (value) => Navigator.of(context).pop());
+                              }),
                   ],
                 ),
               ),

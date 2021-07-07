@@ -26,6 +26,10 @@ class Promotions with ChangeNotifier {
         (element) => element.id == id,
         orElse: () => Promotion.initialize(),
       );
+  Promotion getPromotionByCode(String code) => _promotions.firstWhere(
+        (element) => element.code == code,
+        orElse: () => Promotion.initialize(),
+      );
   Future<void> addPromotion(
       Promotion promotion, bool isChoosingImageFromLocal) {
     return PromotionsAPI().addPromotion(promotion, isChoosingImageFromLocal);

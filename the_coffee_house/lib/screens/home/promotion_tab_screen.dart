@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:provider/provider.dart';
+import 'package:the/helpers/search_promotion.dart';
 import 'package:the/providers/promotions.dart';
+import 'package:the/screens/home/search_promotion_bottom_sheet.dart';
 
 import '../../utils/const.dart' as Constant;
 import '../../widgets/reward_card.dart';
@@ -18,6 +21,10 @@ class PromotionTabScreen extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: ListTile(
+              onTap: () => showBarModalBottomSheet(
+                context: context,
+                builder: (_) => SearchPromotionBottomSheet(),
+              ),
               horizontalTitleGap: 0,
               tileColor: Colors.white,
               leading: Icon(

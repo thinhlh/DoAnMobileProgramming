@@ -10,7 +10,7 @@ import 'package:the/services/auth_api.dart';
 import 'package:the/services/user_api.dart';
 import 'package:the/utils/base_date_formatter.dart';
 import 'package:the/widgets/admin/admin_bar_chart.dart';
-import 'package:the/widgets/admin/line_chart.dart';
+import 'package:the/widgets/admin/admin_line_chart.dart';
 import 'package:the/widgets/navigative_action_card.dart';
 import '/utils/const.dart' as Constant;
 
@@ -322,8 +322,7 @@ class AdminDashboard extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(height: Constant.SIZED_BOX_HEIGHT),
-                                    // AdminLineChart(),
+                                    //AdminLineChart(),
                                     //AdminPieChart(),
                                   ],
                                 ),
@@ -407,6 +406,7 @@ class AdminDashboardProvider with ChangeNotifier {
   int total;
   int numberOfOrders;
   int deliveredOrders;
+  List<int> dailyProfit;
 
   Future<void> fetchProfit(DateTime fromDate, DateTime toDate) async {
     waiting = true;

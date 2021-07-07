@@ -26,7 +26,7 @@ class PromotionCard extends StatelessWidget {
       ).then((value) {
         if (value != null)
           Navigator.of(context).pop(value);
-        else
+        else if (value == null && isUsedForChoosingPromotion == true)
           tabScreenState.currentState.navigateToScreen(OrderScreen.routeName);
       }),
       child: IntrinsicHeight(

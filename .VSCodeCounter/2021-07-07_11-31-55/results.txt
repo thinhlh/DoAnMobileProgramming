@@ -1,0 +1,161 @@
+Date : 2021-07-07 11:31:55
+Directory : /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib
+Total : 125 files,  13132 codes, 126 comments, 940 blanks, all 14198 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Dart     |        125 |     13,132 |        126 |        940 |     14,198 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                     |        125 |     13,132 |        126 |        940 |     14,198 |
+| helpers                                                                                                               |          7 |        328 |          0 |         57 |        385 |
+| models                                                                                                                |         11 |        499 |          3 |         74 |        576 |
+| providers                                                                                                             |         11 |        553 |         19 |        125 |        697 |
+| screens                                                                                                               |         48 |      7,702 |         36 |        360 |      8,098 |
+| screens/admin                                                                                                         |         18 |      3,513 |         17 |        158 |      3,688 |
+| screens/auth                                                                                                          |          4 |        766 |          8 |         45 |        819 |
+| screens/home                                                                                                          |         26 |      3,423 |         11 |        157 |      3,591 |
+| services                                                                                                              |         16 |      1,160 |         40 |        160 |      1,360 |
+| utils                                                                                                                 |          8 |        201 |         16 |         44 |        261 |
+| utils/exceptions                                                                                                      |          2 |         17 |          0 |          3 |         20 |
+| widgets                                                                                                               |         23 |      2,569 |         10 |        115 |      2,694 |
+| widgets/admin                                                                                                         |          8 |      1,150 |          0 |         32 |      1,182 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                              | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/admin_search_product.dart                | Dart     |         44 |          0 |          8 |         52 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/admin_search_store.dart                  | Dart     |         48 |          0 |          8 |         56 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/search_notification.dart                 | Dart     |         45 |          0 |          8 |         53 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/search_product.dart                      | Dart     |         43 |          0 |          8 |         51 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/search_promotion.dart                    | Dart     |         46 |          0 |          8 |         54 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/search_store.dart                        | Dart     |         54 |          0 |          9 |         63 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/helpers/search_users.dart                        | Dart     |         48 |          0 |          8 |         56 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/main.dart                                        | Dart     |        120 |          2 |          5 |        127 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/cart_item.dart                            | Dart     |         45 |          0 |          9 |         54 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/category.dart                             | Dart     |         22 |          0 |          5 |         27 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/custom_user.dart                          | Dart     |         70 |          0 |          9 |         79 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/delivery_detail.dart                      | Dart     |         34 |          0 |          6 |         40 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/feedback.dart                             | Dart     |         28 |          0 |          5 |         33 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/membership.dart                           | Dart     |         30 |          0 |          3 |         33 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/notification.dart                         | Dart     |         61 |          1 |          9 |         71 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/order.dart                                | Dart     |         67 |          1 |          8 |         76 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/product.dart                              | Dart     |         44 |          0 |          8 |         52 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/promotion.dart                            | Dart     |         62 |          1 |          7 |         70 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/models/store.dart                                | Dart     |         36 |          0 |          5 |         41 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/admin_orders.dart                      | Dart     |         32 |          0 |          9 |         41 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/cart.dart                              | Dart     |         71 |          4 |         17 |         92 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/categories.dart                        | Dart     |         78 |          2 |         14 |         94 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/feedbacks.dart                         | Dart     |         19 |          0 |          5 |         24 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/notifications.dart                     | Dart     |         49 |          3 |         11 |         63 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/products.dart                          | Dart     |         74 |          2 |         14 |         90 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/promotions.dart                        | Dart     |         42 |          0 |         10 |         52 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/stores.dart                            | Dart     |         57 |          1 |         12 |         70 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/user_orders.dart                       | Dart     |         27 |          0 |          8 |         35 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/user_provider.dart                     | Dart     |         68 |          0 |         15 |         83 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/providers/users.dart                             | Dart     |         36 |          7 |         10 |         53 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_categories_screen.dart       | Dart     |        176 |          0 |          5 |        181 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_dashboard.dart               | Dart     |        416 |          2 |          6 |        424 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_feedbacks_screen.dart        | Dart     |          7 |          0 |          2 |          9 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_notifications_screen.dart    | Dart     |         48 |          0 |          3 |         51 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_order_detail.dart            | Dart     |        321 |          0 |          6 |        327 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_orders_screen.dart           | Dart     |        227 |          1 |          8 |        236 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_products_screen.dart         | Dart     |         46 |          0 |          3 |         49 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_promotions_screen.dart       | Dart     |        192 |          0 |          5 |        197 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_stores_screen.dart           | Dart     |        197 |          0 |          5 |        202 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_tab_screen.dart              | Dart     |         60 |          0 |          6 |         66 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_user_info.dart               | Dart     |        156 |          0 |          3 |        159 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/admin_users_screen.dart            | Dart     |         53 |          2 |          5 |         60 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/category_edit_screen.dart          | Dart     |        210 |          2 |         16 |        228 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/edit_option.dart                   | Dart     |          5 |          0 |          1 |          6 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/notification_edit_screen.dart      | Dart     |        333 |          2 |         23 |        358 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/product_edit_screen.dart           | Dart     |        299 |          2 |         18 |        319 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/promotion_edit_screen.dart         | Dart     |        453 |          4 |         26 |        483 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/admin/store_edit_screen.dart             | Dart     |        314 |          2 |         17 |        333 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/auth/auth_screen.dart                    | Dart     |         20 |          0 |          5 |         25 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/auth/login_screen.dart                   | Dart     |        318 |          2 |         12 |        332 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/auth/signup_screen.dart                  | Dart     |        364 |          6 |         24 |        394 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/auth/wrapper.dart                        | Dart     |         64 |          0 |          4 |         68 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/accumulative_point_tab_screen.dart  | Dart     |        193 |          0 |          5 |        198 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/add_new_delivery_address.dart       | Dart     |        120 |          0 |         10 |        130 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/change_password_screen.dart         | Dart     |        173 |          0 |          9 |        182 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/choose_delivery_address_screen.dart | Dart     |        143 |          1 |          3 |        147 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/contact_screen.dart                 | Dart     |         84 |          0 |          5 |         89 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/favorites_screen.dart               | Dart     |         56 |          0 |          4 |         60 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/google_map.dart                     | Dart     |         61 |          0 |          9 |         70 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/home_screen.dart                    | Dart     |        145 |          0 |          5 |        150 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/order_confirmation_screen.dart      | Dart     |        487 |          1 |         13 |        501 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/order_detail_bottom_sheet.dart      | Dart     |        355 |          0 |          4 |        359 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/order_screen.dart                   | Dart     |        100 |          0 |          4 |        104 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/orders_history_screen.dart          | Dart     |        227 |          3 |          5 |        235 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/others_screen.dart                  | Dart     |        131 |          0 |          5 |        136 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/point_history.dart                  | Dart     |         71 |          0 |          2 |         73 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/products_overview_screen.dart       | Dart     |         48 |          0 |          4 |         52 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/promotion_info_screen.dart          | Dart     |        169 |          0 |          5 |        174 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/promotion_tab_screen.dart           | Dart     |         84 |          0 |          4 |         88 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/recently_ordered_products.dart      | Dart     |         41 |          0 |          2 |         43 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/reward_screen.dart                  | Dart     |         50 |          1 |          5 |         56 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/setting_screen.dart                 | Dart     |         80 |          0 |          4 |         84 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/store_info_screen.dart              | Dart     |        157 |          0 |          6 |        163 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/stores_screen.dart                  | Dart     |        112 |          2 |          9 |        123 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/tab_screen.dart                     | Dart     |        108 |          2 |         11 |        121 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/term_screen.dart                    | Dart     |          0 |          0 |          1 |          1 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/user_info_screen.dart               | Dart     |        197 |          1 |         15 |        213 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/screens/home/web_view_screen.dart                | Dart     |         31 |          0 |          8 |         39 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/admin_dashboard_service.dart            | Dart     |         19 |          0 |          3 |         22 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/admin_orders_api.dart                   | Dart     |         41 |          0 |          7 |         48 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/auth_api.dart                           | Dart     |        103 |          6 |         15 |        124 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/categories_api.dart                     | Dart     |        110 |          4 |         11 |        125 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/fcm_service.dart                        | Dart     |         23 |          1 |          7 |         31 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/feedbacks_api.dart                      | Dart     |         18 |          0 |          4 |         22 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/fire_store.dart                         | Dart     |          8 |          0 |          6 |         14 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/notifications_api.dart                  | Dart     |        139 |          5 |         12 |        156 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/order_api.dart                          | Dart     |         58 |          0 |          6 |         64 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/products_api.dart                       | Dart     |        102 |          4 |         10 |        116 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/promotions_api.dart                     | Dart     |        113 |          2 |         10 |        125 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/shared_preferences.dart                 | Dart     |        134 |          6 |         26 |        166 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/stores_api.dart                         | Dart     |         94 |          2 |         10 |        106 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/user_api.dart                           | Dart     |         84 |          4 |         16 |        104 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/user_orders_api.dart                    | Dart     |         60 |          3 |          8 |         71 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/services/users_api.dart                          | Dart     |         54 |          3 |          9 |         66 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/base_date_formatter.dart                   | Dart     |          9 |          0 |          2 |         11 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/const.dart                                 | Dart     |         23 |         11 |         14 |         48 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/exceptions/authenticate_exception.dart     | Dart     |          9 |          0 |          2 |         11 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/exceptions/http_exception.dart             | Dart     |          8 |          0 |          1 |          9 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/firebase_notification_handler.dart         | Dart     |         69 |          3 |         14 |         86 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/global_vars.dart                           | Dart     |          5 |          0 |          3 |          8 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/notification_handler.dart                  | Dart     |         38 |          0 |          5 |         43 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/utils/router.dart                                | Dart     |         40 |          2 |          3 |         45 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/admin_bar_chart.dart               | Dart     |        137 |          0 |          5 |        142 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/admin_line_chart.dart              | Dart     |        269 |          0 |          7 |        276 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/admin_notification_card.dart       | Dart     |        150 |          0 |          3 |        153 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/admin_product_card.dart            | Dart     |        149 |          0 |          3 |        152 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/admin_user_card.dart               | Dart     |        164 |          0 |          4 |        168 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/categories_edit_list_view.dart     | Dart     |         94 |          0 |          3 |         97 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/notifications_edit_list_view.dart  | Dart     |         93 |          0 |          4 |         97 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/admin/products_edit_list_view.dart       | Dart     |         94 |          0 |          3 |         97 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/badge.dart                               | Dart     |         43 |          1 |          4 |         48 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/base_divider.dart                        | Dart     |         20 |          0 |          2 |         22 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/bottom_sheet_product.dart                | Dart     |        322 |          0 |         15 |        337 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/cart_bottom_navigation.dart              | Dart     |         77 |          1 |          4 |         82 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/category_list_view.dart                  | Dart     |         75 |          0 |          5 |         80 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/expandable_list_tile.dart                | Dart     |         29 |          0 |          5 |         34 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/image_slider_widget.dart                 | Dart     |         41 |          0 |          4 |         45 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/navigative_action_card.dart              | Dart     |         54 |          0 |          5 |         59 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/notification_info.dart                   | Dart     |        117 |          0 |          7 |        124 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/notification_list_tile.dart              | Dart     |         92 |          0 |          6 |         98 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/order_card_navigation.dart               | Dart     |        168 |          4 |          9 |        181 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/product_card.dart                        | Dart     |        113 |          1 |          6 |        120 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/reward_card.dart                         | Dart     |         94 |          0 |          4 |         98 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/store_card.dart                          | Dart     |         91 |          2 |          4 |         97 |
+| /Users/hoangthinh/Desktop/DoAnMobileProgramming/the_coffee_house/lib/widgets/user_info_card.dart                      | Dart     |         83 |          1 |          3 |         87 |
+| Total                                                                                                                 |          |     13,132 |        126 |        940 |     14,198 |
++-----------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

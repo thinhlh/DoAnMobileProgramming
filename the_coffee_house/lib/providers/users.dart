@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:the/models/custom_user.dart';
@@ -13,23 +14,15 @@ class Users with ChangeNotifier {
   Users.fromList(this._users);
 
   Future<void> fetchAndUpdateUsersInfo() async {
-    for (var user in _users) {
-      try {
-        print('Should implement fetching method here');
-        // final Map<String, Object> result =
-        //     await UsersAPI().getUserInfo(user.uid);
-
-        // user.lastSignIn = DateFormat(_formatPattern)
-        //     .parse((result['metadata'] as Map)['lastSignInTime'], true);
-        // user.registerDate = DateFormat(_formatPattern)
-        //     .parse((result['metadata'] as Map)['creationTime'], true);
-
-        //user.totalOrders = result['totalOrders'] ?? 0;
-      } catch (e) {
-        return;
-      }
-    }
-    return true;
+    return FirebaseFirestore.instance.collection('users').get().then(
+          (collectionSnapshot) => (collectionSnapshot) => Users.fromList(
+                collectionSnapshot.docs.map((documentSnapshot) {
+                  Map<String, Object> json = documentSnapshot.data();
+                  json['uid'] = documentSnapshot.id;
+                  return CustomUser.fromJson(json);
+                }).toList(),
+              ),
+        );
   }
 
   CustomUser getUserById(String id) {
